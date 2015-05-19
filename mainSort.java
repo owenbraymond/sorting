@@ -4,7 +4,7 @@ public class mainSort
 {
     public static void main()
     {
-        int[] array = new int[5];
+        int[] array = new int[100];
 
         selectionSort selSorter = new selectionSort();
         insertionSort inSorter = new insertionSort();
