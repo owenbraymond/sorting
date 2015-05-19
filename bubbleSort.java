@@ -8,16 +8,16 @@ public class bubbleSort implements sortingAlgorithm
         boolean sorted = true;
         int temp;
 
-        while ( sorted )
+        while (sorted)
         {
             sorted= false;    
-            for( j=0;  j < array.length -1;  j++ )
+            for(j = 0; j < array.length - 1; j ++)
             {
-                if ( array[ j ] > array[j+1] )   
+                if ( array[j] > array[j+1] )   
                 {
-                    temp = array[ j ]; 
-                    array[ j ] = array[ j+1 ];
-                    array[ j+1 ] = temp;
+                    temp = array[j]; 
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
                     sorted = true; 
                 } 
             } 
