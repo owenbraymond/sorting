@@ -8,17 +8,17 @@ public class selectionSort implements sortingAlgorithm
         int switchindex = 0;
         for(int i = 0; i < array.length; i ++)
         {
-            smallest = array[i];
+            smallest = i;
             for(int j = i; j < array.length; j++)
             {
-                if(array[j] < smallest)
+                if(array[j] < array[smallest])
                 {
-                    smallest = array[j];
-                    switchindex = j;
+                    smallest = j;
                 }
             }
-            array[switchindex] = array[i];
-            array[i] = smallest;
+            int temp = array[i];
+            array[i] = array[smallest];
+            array[smallest] = temp;
         }
     }
 }
