@@ -9,7 +9,6 @@ public class mainSort
         selectionSort selSorter = new selectionSort();
         insertionSort inSorter = new insertionSort();
         bubbleSort bubSorter = new bubbleSort();
-        boolean sorted = true;
 
         for(int i = 0; i < array.length; i ++)
         {
